@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/balaji39mit/DataStructures"
+	"github.com/balaji39mit/Programs/DataStructures"
 )
 
 var stack DataStructures.IStack
