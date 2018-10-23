@@ -1,6 +1,8 @@
 package DataStructures
 
-import "errors"
+import (
+	"errors"
+)
 
 type StackNode struct {
 	data interface{}
