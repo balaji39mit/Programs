@@ -7,13 +7,13 @@ type MergeSort struct{}
 func merge(arr []int32, low, middle, high int) []int32 {
 	firstHalf := [middle - low + 1]int32{}
 	secondHalf := [high - middle]int32{}
-	for i := low; i <= middle; i++ {
-		firstHalf[i] = arr[i]
+	for i := 0; i < len(firstHalf); i++ {
+		firstHalf[i] = arr[low+i]
 	}
-	for i := middle + 1; i <= high; i++ {
-		secondHalf[i] = arr[i]
+	for i := 0; i < len(secondHalf); i++ {
+		secondHalf[i] = arr[middle+1+i]
 	}
-	i, j, k := 0, 0, 0
+	i, j, k := 0, 0, low
 	for ; i < len(firstHalf) && j < len(secondHalf); k++ {
 		if firstHalf[i] <= secondHalf[j] {
 			arr[k] = firstHalf[i]
