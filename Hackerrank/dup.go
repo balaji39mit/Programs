@@ -1,4 +1,4 @@
-package main
+package hackerrank
 
 func getMinimumUniqueSum(arr []int32) int32 {
 	// Write your code here

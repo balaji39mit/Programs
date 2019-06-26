@@ -1,4 +1,4 @@
-package main
+package practice_problems
 
 import (
 	"bufio"
@@ -91,38 +91,4 @@ func addOne(arr []int32) []int32 {
 		output = append(output, carry)
 	}
 	return reverseArray(output)
-}
-
-func main() {
-
-	fmt.Println("Add 1 to 1234 : %v", addOne([]int32{1, 2, 3, 4}))
-	fmt.Println("Add 1 to empty array : %v", addOne([]int32{}))
-	fmt.Println("Add 1 to 99 : %v", addOne([]int32{9, 9}))
-	fmt.Println("Add 1 to 1000 : %v", addOne([]int32{1, 0, 0, 0}))
-
-	fmt.Println("Negative integers....\n")
-	fmt.Println("Add 1 to -1 : %v", addOne([]int32{-1}))
-	fmt.Println("Add 1 to -8 : %v", addOne([]int32{-8}))
-	fmt.Println("Add 1 to -110 : %v", addOne([]int32{-1, 1, 0}))
-	fmt.Println("Add 1 to -100 : %v", addOne([]int32{-1, 0, 0}))
-
-	/*reader := bufio.NewReaderSize(os.Stdin, 1024*1024)
-	writer := bufio.NewWriter(os.Stdout)
-	nTemp, err := strconv.ParseInt(readLine(reader), 10, 64)
-	n := int32(nTemp)
-	checkError(err)
-	var arr []int32
-	arrTemp := strings.Split(readLine(reader), " ")
-	for i := 0; i < int(n); i++ {
-		arrItem, err := strconv.ParseInt(arrTemp[i], 10, 64)
-		checkError(err)
-		arr = append(arr, int32(arrItem))
-	}
-
-	output := addOne(arr)
-
-	fmt.Fprintf(writer, "%v", output)
-
-	writer.Flush()*/
-
 }

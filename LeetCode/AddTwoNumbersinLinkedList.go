@@ -4,10 +4,10 @@ import (
 	"github.com/balaji39mit/Programs/DataStructures"
 )
 
-var InputList1, InputList2 *DataStructures.ListNode
+var InputList1, InputList2 *DataStructures.LinkedList
 
-func addTwo(list1 *DataStructures.ListNode, list2 *DataStructures.ListNode) *DataStructures.ListNode {
-	list := &DataStructures.ListNode{}
+func addTwo(list1 *DataStructures.LinkedList, list2 *DataStructures.LinkedList) *DataStructures.LinkedList {
+	list := &DataStructures.LinkedList{}
 	carry := 0
 	for ; list1 != nil && list2 != nil; list1, list2 = list1.Next, list2.Next {
 		data1 := (list1.Data).(int)
@@ -38,8 +38,8 @@ func addTwo(list1 *DataStructures.ListNode, list2 *DataStructures.ListNode) *Dat
 }
 
 func main() {
-	InputList1 = &DataStructures.ListNode{}
-	InputList2 = &DataStructures.ListNode{}
+	InputList1 = &DataStructures.LinkedList{}
+	InputList2 = &DataStructures.LinkedList{}
 	InputList1.Insert(2)
 	InputList1.Insert(4)
 	InputList1.Insert(3)

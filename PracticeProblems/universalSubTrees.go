@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package practice_problems
 
 type Node struct {
 	value int
@@ -27,8 +25,4 @@ func countUniversalSubTree(root *Node) (int, bool) {
 		return totalCount + 1, true
 	}
 	return totalCount, false
-}
-
-func main() {
-	fmt.Println(countUniversalSubTree(&Node{}))
 }

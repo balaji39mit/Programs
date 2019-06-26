@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package practice_problems
 
 // you can also use imports, for example:
 // import "fmt"
@@ -23,8 +21,4 @@ func Solution2(S string) int {
 		}
 	}
 	return count
-}
-
-func main() {
-	fmt.Println(Solution2("codility"))
 }

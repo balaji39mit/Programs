@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package hackerrank
 
 func countDuplicates(numbers []int32) int32 {
 	// Write your code here
@@ -43,7 +41,4 @@ func countDup(a []int32) int32 {
 		}
 	}
 	return duplicates
-}
-func main() {
-	fmt.Println(countDuplicates([]int32{}))
 }

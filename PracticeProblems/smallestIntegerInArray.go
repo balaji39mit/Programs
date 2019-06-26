@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package practice_problems
 
 // you can also use imports, for example:
 // import "fmt"
@@ -24,9 +22,4 @@ func Solution1(A []int) int {
 		}
 	}
 	return -1
-}
-
-func main() {
-	output := Solution1([]int{0, 2, 1})
-	fmt.Println(output)
 }

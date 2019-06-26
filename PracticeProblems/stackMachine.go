@@ -1,4 +1,4 @@
-package main
+package practice_problems
 
 import (
 	"errors"
@@ -76,7 +76,7 @@ func (stack *StackNode) Pop() (uint32, error) {
 	return data, nil
 }
 
-//Fetch the top element from the stack and
+//FetchStruct the top element from the stack and
 //push that element to the stack
 func (stack *StackNode) performDuplicate() bool {
 	top, err := stack.Top()

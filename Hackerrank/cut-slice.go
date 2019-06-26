@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package hackerrank
 
 func merge(left []int32, right []int32) []int32 {
 
@@ -51,9 +47,4 @@ func cutSlice(length []int32) []int32 {
 		length = length[cutLength:]
 	}
 	return output
-}
-
-func main() {
-	arr := cutSlice([]int32{1, 2, 3, 4, 3, 3, 2, 1})
-	fmt.Println(arr)
 }

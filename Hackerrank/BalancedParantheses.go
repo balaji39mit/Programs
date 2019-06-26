@@ -1,8 +1,6 @@
-package main
+package hackerrank
 
 import (
-	"fmt"
-
 	"github.com/balaji39mit/Programs/DataStructures"
 )
 
@@ -40,13 +38,4 @@ func isBalanced(expression string) string {
 		return "YES"
 	}
 	return "NO"
-}
-
-func main() {
-	expression := "[]{}()"
-	fmt.Println(isBalanced(expression))
-	fmt.Println(isBalanced(""))
-	fmt.Println(isBalanced("{[()]}"))
-	fmt.Println(isBalanced("{[(])}"))
-	fmt.Println(isBalanced("{{[[(())]]}}"))
 }

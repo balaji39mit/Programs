@@ -3,7 +3,7 @@
 //2. The number of moves should be minimum.
 //3. Return the minimum number of moves.
 
-package main
+package hackerrank
 
 func process(arr []int32) bool {
 	count := 0

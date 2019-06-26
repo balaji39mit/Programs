@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package hackerrank
 
 // Complete the maxDifference function below.
 func maxDifference(a []int32) int32 {
@@ -31,8 +29,4 @@ func optimizedMaxDifference(a []int32) int32 {
 		}
 	}
 	return maxDiff
-}
-
-func main() {
-	fmt.Println(maxDifference([]int32{}))
 }
